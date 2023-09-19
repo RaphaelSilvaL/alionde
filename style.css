@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -8,6 +9,7 @@ html, body {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
 body {
     background: black;
     color: white;
@@ -18,14 +20,16 @@ body {
     row-gap: 50px;
     position: relative;
 }
+
 h1 {
     width: 100%;
     text-align: center;
     font-weight: 500;
     font-size: 30px;
 }
+
 button {
-    padding: 17px, 30px;
+    padding: 17px 30px;
     border-radius: 8px;
     font-weight: 900;
     font-size: 25px;
@@ -36,21 +40,26 @@ button {
     z-index: 2;
     transition: 0.1s;
 }
+
 button:hover {
     background-image: linear-gradient(#ffffff, #ffffff);
 }
+
 button:active {
     padding: 12px 28px;
     background-image: linear-gradient(#dcdcdc, #dcdcdc);
 }
+
 img {
     height: 100%;
     max-width: 100%;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotate(0deg); /* Inicialmente, a imagem não está girada */
     top: 0;
+    transition: transform 4s ease-in-out; /* Efeito de transição para a rotação */
 }
+
 .hidden {
     opacity: 0;
     transition: opacity 2s ease-in;
